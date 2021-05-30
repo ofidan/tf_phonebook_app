@@ -5,7 +5,7 @@ from flaskext.mysql import MySQL
 # Create an object named app
 app = Flask(__name__)
 
-db_endpoint = open("/home/ec2-user/dbserver.endpoint", 'r', encoding='UTF-8') 
+db_endpoint = open("/home/ec2-user/tf_phonebook_app/dbserver.endpoint", 'r', encoding='UTF-8') 
 
 # Configure mysql database
 app.config['MYSQL_DATABASE_HOST'] = db_endpoint.readline().strip()
